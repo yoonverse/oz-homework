@@ -1,0 +1,117 @@
+/* 전체 선택자 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 태그 선택자 */
+body {
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+/* 태그 선택자 + 가상요소 선택자 */
+h1::before, h1::after {
+    content:"✨";
+    margin: 0px 10px;
+}
+/* ID 선택자 */
+#registration-form {
+    max-width: 500px;
+    margin: 80px auto 40px;
+    background: #fff;
+    padding: 40px 40px 26px;
+    border-radius: 32px;
+    box-shadow: rgba(172, 172, 181, 0.2) 0px 7px 29px 0px ;
+}
+/* 태그 선택자 */
+form p {
+    padding: 12px;
+}
+/* 태그 선택자 + 자식 선택자 */
+form > p {
+    border-bottom: 1px solid #eee;
+}
+/* 태그 선택자 + 자식 선택자 + 가상 클래스 선택자 */
+form > p:first-child {
+    margin-top: 20px;
+}
+/* .form-group::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #ddd;
+    margin-top: 10px;
+} */
+/* 클래스 선택자 + 자식 선택자 + 가상 클래스 선택자 */
+.form-group > label:first-child, .form-group > span {
+    tab-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    width: 100px;
+    padding-left: 6px;
+    margin: 6px 0px;
+}
+/* 클래스 선택자 + 자식 선택자 + 가상 클래스 선택자 */
+.form-group > label:nth-child(n+2) {
+    margin-right: 16px;
+}
+/* 속성 선택자 */
+[type="text"], 
+[type="email"], 
+[type="password"],
+[type="date"],
+[type="number"],
+[type="range"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+/* 클래스 선택자 + 가상 클래스 선택자 + 자식 선택자 */
+.form-group:nth-child(-n+3) > label::after {
+    content: '*';
+    color: red;
+    padding-left: 4px;
+}
+/* 태그 선택자 + 가상 클래스 선택자 */
+select:hover {
+    border: 1px solid #333;
+}
+/* 클래스 선택자 */
+.button-wrap {
+    text-align: right;
+}
+/* 태그 선택자 */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+/* 속성 선택자 */
+[type="submit"] {
+    background: #086ee2;
+    color: white;
+} 
+/* 속성 선택자 + 가상 클래스 선택자 */
+[type="submit"]:hover {
+    background: #065fc5;
+    cursor: pointer;
+} 
+/* 속성 선택자 */
+[type="reset"] {
+    background: #da0606;
+    color: white;
+}
+/* 속성 선택자 + 가상 클래스 선택자 */
+[type="reset"]:hover {
+    background: #bf0404;
+    cursor: pointer;
+}
+/* 태그 선택자 */
+footer {
+    text-align: center;
+}

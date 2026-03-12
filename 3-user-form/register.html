@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 섹션 영역 -->
+    <section id="registration-form">
+        <h1>User Registration</h1>
+        <form action="#" method="POST">
+            <p class="form-group">
+                <label for="username">이름</label>
+                <input type="text" id="username" name="username" placeholder="홍길동">
+            </p>
+
+            <p class="form-group">
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+            </p>
+
+            <p class="form-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" placeholder="비밀번호">
+            </p>
+
+            <p class="form-group">
+                <label for="birthday">생년월일</label>
+                <input type="date" id="birthday" name="birthday" placeholder="YYYY-MM-DD">
+            </p>
+
+            <p class="form-group">
+                <label for="age">나이</label>
+                <input type="number" id="age" name="age" min="18" max="100">
+            </p>
+
+            <p class="form-group">
+                <label for="satisfaction">만족도(1~10)</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+            </p>
+
+            <p class="form-group">
+                <span>성별</span>
+                
+                <input type="radio" id="gender-male" name="gender" value="male">
+                <label for="gender-male">남성</label>
+
+                <input type="radio" id="gender-female" name="gender" value="female">
+                <label for="gender-female">여성</label>
+            </p>
+
+            <p class="form-group">
+                <span>관심사</span>
+                
+                <input type="checkbox" id="hobby-coding" name="hobby" value="Coding">
+                <label for="hobby-coding">코딩</label>
+
+                <input type="checkbox" id="hobby-gaming" name="hobby" value="Gaming">
+                <label for="hobby-gaming">게임</label>
+
+                <input type="checkbox" id="hobby-reading" name="hobby" value="Reading">
+                <label for="hobby-reading">독서</label>
+            </p>
+
+            <p class="form-group">
+                <label for="nation">국가</label>
+        
+                <select id="nation" name="nation">
+                    <option value="South Korea">대한민국</option>
+                    <option value="USA">미국</option>
+                    <option value="Japan">일본</option>
+                    <option value="China">중국</option>
+                    <option value="UK">영국</option>
+                </select>  
+            </p>
+            <!-- 버튼 -->
+            <div class="button-wrap">
+                <button type="submit">제출</button>
+                <button type="reset">초기화</button>
+            </div>
+        </form>
+    </section>
+    <!-- 푸터 영역 -->
+    <footer>
+        <p>
+            &copy; 2025 Your Website
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <strong>연락처</strong> 010-1234-5678
+        </p>
+    </footer>
+</body>
+</html>

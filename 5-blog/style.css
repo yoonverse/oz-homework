@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 1rem;
+}
+/* header 영역 */
+header {
+    padding: 1rem;
+    border-bottom: 0.1rem solid #ccc;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-size: 2rem;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+/* section 영역 */
+section {
+    margin: 2vw 1vw;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+#posts {
+    display: flex;
+    flex-direction: column;
+}
+.post {
+    padding: 1rem;
+    border-bottom: 0.1rem solid #ccc;
+    /* margin-bottom: 1rem; */
+}
+
+/* aside 영역 */
+aside {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+footer {
+    padding: 1rem;
+    border-top: 0.1rem solid #ccc;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* 미디어쿼리 - 태블릿(768px 이상) */
+@media (min-width: 768px) {
+    body {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5rem;
+    }
+    aside {
+        padding: 1.5rem;
+    }
+}
+
+/* 미디어쿼리 - 데스크톱(1024px 이상) */
+@media (min-width: 1024px) {
+    body {
+        min-width: 80vw;
+        margin: 0 auto;
+    }
+    #posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+    }
+    aside {
+        width: 25vw;
+        padding-left: 2vw;
+    }
+}

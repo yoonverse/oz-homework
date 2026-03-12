@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <h1><img src="./media/logo.webp" alt="로고 이미지" width="100"> 회원가입</h1>
+    </header>
+
+    <!-- 네비 영역 -->
+    <nav>
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Calender</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </nav>
+
+    <!-- 섹션 영역 -->
+    <section>
+        <h2>사용자 정보 입력</h2>
+        <form action="#" method="POST">
+            <p>
+                <label for="username">이름</label>
+                <input type="text" id="username" name="username" placeholder="홍길동">
+            </p>
+
+            <p>
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+            </p>
+
+            <p>
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" placeholder="비밀번호">
+            </p>
+
+            <p>
+                <label for="birthday">생년월일</label>
+                <input type="date" id="birthday" name="birthday" placeholder="YYYY-MM-DD">
+            </p>
+
+            <p>
+                <label for="age">나이</label>
+                <input type="number" id="age" name="age" min="18" max="100">
+            </p>
+
+            <p>
+                <label for="satisfaction">만족도(1~10)</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+            </p>
+
+            <p>
+                <span>성별</span>
+                
+                <input type="radio" id="gender-male" name="gender" value="male">
+                <label for="gender-male">남성</label>
+
+                <input type="radio" id="gender-female" name="gender" value="female">
+                <label for="gender-female">여성</label>
+            </p>
+
+            <p>
+                <span>관심사</span>
+                
+                <input type="checkbox" id="hobby-coding" name="hobby" value="Coding">
+                <label for="hobby-coding">코딩</label>
+
+                <input type="checkbox" id="hobby-gaming" name="hobby" value="Gaming">
+                <label for="hobby-gaming">게임</label>
+
+                <input type="checkbox" id="hobby-reading" name="hobby" value="Reading">
+                <label for="hobby-reading">독서</label>
+            </p>
+
+            <p>
+                <label for="nation">국가</label>
+        
+                <select id="nation" name="nation">
+                    <option value="South Korea">대한민국</option>
+                    <option value="USA">미국</option>
+                    <option value="Japan">일본</option>
+                    <option value="China">중국</option>
+                    <option value="UK">영국</option>
+                </select>  
+            </p>
+        </form>
+    </section>
+
+    <!-- 아티클 영역 -->
+    <article>
+        <!-- svg 추가 -->
+        <svg width="30" height="30" viewBox="0 0 64 64" role="img" aria-label="Create account icon">
+        <circle cx="26" cy="22" r="10" fill="#2563eb"/>
+        <path d="M8 56c2-12 10-18 18-18s16 6 18 18" fill="#2563eb"/>
+        <circle cx="48" cy="34" r="10" fill="#16a34a"/>
+        <path d="M48 29v10M43 34h10" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+
+        <strong>Why Register?</strong>
+        <br>
+        By creating an account, you gain access to personalized features, exclusive content,
+        and a more tailored user experience. <br> Registration also allows you to securely manage
+        your information and stay updated with the latest news and updates.
+        <a href="#">더보기</a>
+    </article>
+
+    <br>
+
+    <!-- 어사이드 영역 -->
+    <aside>
+        <!-- canvas 추가 : 고객지원 안내용 일러스트가 들어갈 임시 영역 -->
+        <canvas id="support-icon" width="20" height="20">
+        Canvas is not supported in this browser.
+        </canvas>
+
+        <br>
+        <!-- svg 추가 -->
+        <svg width="30" height="30" viewBox="0 0 64 64" role="img" aria-label="Customer support icon">
+        <circle cx="32" cy="32" r="28" fill="#2563eb"/>
+        <path d="M16 34v6a6 6 0 006 6h4V32h-4a6 6 0 00-6 6z" fill="#fff"/>
+        <path d="M48 34v6a6 6 0 01-6 6h-4V32h4a6 6 0 016 6z" fill="#fff"/>
+        <path d="M20 30a12 12 0 0124 0" fill="none" stroke="#fff" stroke-width="4"/>
+        </svg>
+
+        <strong>Contact Support</strong>
+        <br>
+        If you experience any issues during registration or have questions about your account,
+        our support team is here to help. <br> Please reach out via email or use the help center
+        for prompt assistance.
+        <a href="#">더보기</a>
+
+        <br>
+
+        <!-- video 추가 -->
+        <!-- <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls width="300"></video> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DavG9K14B3c?si=f5IpQc6QgFdn5UzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </aside>
+
+    <br>
+
+    <!-- 버튼 -->
+    <button type="submit">제출</button>
+    <button type="reset">초기화</button>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <p>
+            &copy; 2025 Your Website
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <strong>연락처</strong> 010-1234-5678
+        </p>
+    </footer>
+</body>
+</html>
