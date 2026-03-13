@@ -1,10 +1,11 @@
 const maxScore = 100; // 최대 점수
+const BONUS_SCORE = 5;
 var grade; // 등급
 
 // 프롬프트창에서 점수 입력
 let studentName = prompt("이름을 입력하세요");
 let testScore = Number(prompt("점수를 입력하세요. (0~100)"));
-let finalScore = testScore + 5;
+let finalScore = testScore + BONUS_SCORE;
 
 
 // --------------------
@@ -64,7 +65,6 @@ switch(grade) {
 // 결과 출력 (alert)
 // --------------------
 alert(
-    
    `
     Name: ${studentName}
     Grade: ${grade}
